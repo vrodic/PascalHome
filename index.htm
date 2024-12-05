@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vedran Rodić - Pascal Programmer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- PWA: Link to manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- PWA: Meta tags for mobile compatibility -->
+    <meta name="theme-color" content="#000080">
+    <meta name="description" content="Personal website of Vedran Rodić, a seasoned Pascal programmer.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="512x512" href="icons/icon-512x512.png">
+
+    <style>
+        /* Retro Style CSS */
+        body {
+            font-family: "Courier New", Courier, monospace;
+            background-color: #f0f0f0;
+            color: #000080;
+            margin: 20px;
+        }
+        a {
+            color: #0000EE;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        header, nav, section, footer {
+            margin-bottom: 20px;
+        }
+        header {
+            text-align: center;
+        }
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2em;
+        }
+        nav {
+            text-align: center;
+            background-color: #c0c0c0;
+            padding: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #000080;
+            font-weight: bold;
+        }
+        nav a.delphi-button {
+            display: inline-block;
+            padding: 5px 15px;
+            border: 2px outset buttonface;
+            background-color: #d4d0c8;
+            color: #000000;
+            font-weight: normal;
+            font-size: 1em;
+            text-decoration: none;
+            font-family: Tahoma, Geneva, sans-serif;
+            margin: 5px 10px;
+        }
+        nav a.delphi-button:hover {
+            border: 2px inset buttonhighlight;
+        }
+        h2 {
+            border-bottom: 2px solid #000080;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+        h3 {
+            margin-top: 15px;
+            color: #000080;
+        }
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border: 1px solid #000080;
+        }
+        .retro-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        .retro-table th, .retro-table td {
+            border: 1px solid #000080;
+            padding: 8px;
+            text-align: left;
+        }
+        .retro-table th {
+            background-color: #c0c0c0;
+        }
+        .socials a {
+            display: inline-block;
+            margin: 5px 10px;
+            color: #000080;
+        }
+        footer {
+            text-align: center;
+            font-size: 0.9em;
+            color: #000080;
+        }
+        .note {
+            font-style: italic;
+            color: #008000;
+        }
+        .profile-pic {
+            display: block;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: #d4d0c8;
+            border: 3px outset buttonface;
+            width: 192px;
+            height: 192px;
+        }
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2em;
+            }
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
+            .content {
+                padding: 10px;
+            }
+            .retro-table th, .retro-table td {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vedran Rodić</h1>
+        <p>Pascal Programmer from 1995</p>
+        <p class="note">"I should have never trusted Kernighan or Torvalds on Pascal."</p>
+    </header>
+
+    <nav>
+        <a href="#about" class="delphi-button">About Me</a>
+        <a href="#experience" class="delphi-button">Experience</a>
+        <a href="#projects" class="delphi-button">Projects</a>
+        <a href="#delphi" class="delphi-button">Delphi & Lazarus</a>
+        <a href="#links" class="delphi-button">Links</a>
+        <a href="#socials" class="delphi-button">Socials</a>
+        <a href="#contact" class="delphi-button">Contact</a>
+    </nav>
+
+    <div class="content">
+        <section id="about">
+            <h2>Something About Myself</h2>
+            <!-- Added Profile Picture -->
+            <img src="icons/icon-512x512.png" alt="Picture of Vedran Rodić" class="profile-pic">
+
+            <p>I was born on October 21st, 1981, in Zagreb, Croatia. I currently live in Dugo Selo, a small town 20 km east of Zagreb. I was a student of the 2nd year of Technical School Ruđer Bošković.</p>
+            <p>My interests include programming, playing good games like Doom, Warcraft II, Diablo, Quake II, and Dota 2. I spend most of my time programming in Borland Delphi and Lazarus because they are powerful programming tools, and I love to use them. I also have programming experience in C/C++ and do some DOS programs in that language.</p>
+            <p>When I'm not at the computer, I like to ride bicycles, hang out with friends, listen to good music (check out the MP3 page), play basketball, watch movies, and do all other things that an average young man likes to do.</p>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <p><strong>Senior Computer Programmer and Systems Engineer</strong></p>
+            <p><em>Rodić Production | January 2022 - Present</em></p>
+            <p>Helped many clients in implementation and maintenance of their products. Custom programming, production engineering, and maintenance of existing systems. Helping put Pascal back on the map of programming languages.</p>
+
+            <p><strong>Full Stack Software Developer</strong></p>
+            <p><em>Creditreform | February 2002 - Present</em></p>
+            <p>Handled web backend/frontend development, PostgreSQL database management, system integration, and IT operations.</p>
+
+            <p><strong>Developer</strong></p>
+            <p><em>GNU/Linux | 1999 - Present</em></p>
+            <p>Contributing bug fixes, bug triage, and QA for various FLOSS projects (Wine, Xorg, Linux Kernel, Xine, etc.).</p>
+
+            <p><strong>Senior Software Engineer</strong></p>
+            <p><em>Effectiva Studio | October 2023 - September 2024</em></p>
+            <p>Ruby on Rails and JavaScript development for community social media sites beUnity and Crossiety.</p>
+
+            <p><strong>Senior Software Engineer</strong></p>
+            <p><em>ELEKS | August 2022 - July 2023</em></p>
+            <p>Ruby on Rails software development: implementing product features in microservices architecture.</p>
+
+            <p><strong>Senior Software Engineer</strong></p>
+            <p><em>ButterflyMX® | July 2020 - February 2022</em></p>
+            <ul>
+                <li>Developed full-stack Access Control core.</li>
+                <li>Implemented architectural DB improvements that dramatically sped up backend response time.</li>
+                <li>Developed full stack of the Key Locker and Self Guided Tours products.</li>
+                <li>Contributed to company culture and improved processes.</li>
+            </ul>
+
+            <p><strong>Ruby on Rails Software Developer</strong></p>
+            <p><em>Bizzon | June 2019 - January 2020</em></p>
+            <ul>
+                <li>Ported main server app from Rails 4.2 to Rails 5.2 and Rails 6.</li>
+                <li>Feature development and BI reporting solution.</li>
+                <li>Architecture and planning for scaling up and worldwide presence (app/db sharding, etc.).</li>
+                <li>Development process improvements and performance optimizations.</li>
+            </ul>
+
+            <p><strong>Lead Developer</strong></p>
+            <p><em>HomeExchange.com | June 2017 - May 2019</em></p>
+            <p>Development of www.homeexchange.com, supporting the development team, IT Ops/DevOps. Enhanced backend performance by 2x, improved reliability, and achieved cost savings.</p>
+            <p><strong>Technologies Used:</strong></p>
+            <ul>
+                <li>Payment systems: Braintree, Stripe</li>
+                <li>Search: SphinxSearch</li>
+                <li>Database: MySQL</li>
+                <li>Frontend: AngularJS</li>
+                <li>Backend: PHP - Symfony, Yii1/Yii2</li>
+                <li>AWS Services: CloudFront, ELB, EC2, S3, RDS, Elastic Beanstalk, CloudFormation</li>
+                <li>Networking, ElastiCache, cost optimization</li>
+            </ul>
+
+            <p><strong>More info in <a href="CV.pdf">this PDF</a></strong></p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <table class="retro-table">
+                <tr>
+                    <th>Project Name</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td><strong>Tetris Public</strong></td>
+                    <td>Tetris I built in 2000</td>
+                </tr>
+                <tr>
+                    <td><strong>DPE Public</strong></td>
+                    <td>Digital Photo Editor I worked on in 1998</td>
+                </tr>
+                <tr>
+                    <td><strong>RAMbandwidth Public</strong></td>
+                    <td>Simple NDK RAM bandwidth benchmark for Android</td>
+                </tr>
+                <tr>
+                    <td><strong>Novum/vkQuake Public</strong></td>
+                    <td>Vulkan Quake port based on QuakeSpasm</td>
+                </tr>
+                <tr>
+                    <td><strong>crorails Public</strong></td>
+                    <td>A tool to gather and present HZPP train timetable data with train late times</td>
+                </tr>
+                <tr>
+                    <td><strong>odbrojavanje Public</strong></td>
+                    <td>Pascal-based countdown application</td>
+                </tr>
+            </table>
+            <p>For more projects, please visit my <a href="https://github.com/vrodic">GitHub</a>.</p>
+        </section>
+
+        <section id="delphi">
+            <h2>Delphi & Lazarus Components Made by Me in High school</h2>
+            <table class="retro-table">
+                <tr>
+                    <th>Component Name</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td><strong>TDotMatrix (6.3 KB)</strong></td>
+                    <td>This is a component that looks like a dot matrix. Properties Caption, ForeColor, BackColor, and Spacing control this component. It does not use any bitmap resources. Read README.TXT in the archive for more info. Demo included. Freeware with source, Delphi 1, 2, 3, and C++ Builder compatible. Also compatible with Lazarus.</td>
+                </tr>
+                <tr>
+                    <td><strong>TLedNumber (3 KB)</strong></td>
+                    <td>This component is based on TDotMatrix; characters look like LED numbers on hand calculators. This component additionally includes LineWidth and Spacing properties that define the width of characters and spacing between them. Read README.TXT in the archive for more info. Freeware with source, Delphi 1, 2, 3, and C++ Builder compatible. Also compatible with Lazarus.</td>
+                </tr>
+                <tr>
+                    <td><strong>TFlatButton (6.9 KB)</strong></td>
+                    <td>Delphi Microsoft Office 97 Style SpeedButton. This component is intended for Delphi 2.0 users. Freeware with source, Delphi 1, 2, 3, and C++ Builder compatible. Also compatible with Lazarus.</td>
+                </tr>
+            </table>
+            <p>I have designed many other components that I use in my applications. They are still not available for download, and they may be released someday. You can email me for more details about my work.</p>
+        </section>
+
+        <section id="links">
+            <h2>Links</h2>
+            <h3>Delphi and Lazarus Related Sites</h3>
+            <ul>
+                <li><a href="http://www.borland.com/delphi">Borland's Delphi Home Page</a> - The official Delphi Home page. Place where you can find all latest information about Delphi.</li>
+                <li><a href="http://www.lazarus-ide.org/">Lazarus IDE</a> - The professional Free Pascal RAD IDE. Open source Delphi compatible cross-platform IDE.</li>
+                <li><a href="http://delphi.icm.edu.pl/">Delphi Super Page</a> - One of the best Delphi pages ever. You can find many useful components, documentation, and links here.</li>
+                <li><a href="http://www.torry.net/">Torry's Delphi Pages</a> - The best Delphi related page ever, daily updated.</li>
+                <li><a href="http://www.jrsoftware.org/">Jordan Russell's Software Page</a> - Find interesting Delphi components and a very good freeware setup system called Inno Setup.</li>
+            </ul>
+
+            <h3>Modern Free Pascal Projects</h3>
+            <ul>
+                <li><a href="https://www.freepascal.org/">Free Pascal</a> - The Free Pascal Compiler (FPC) is a popular open-source Pascal compiler supporting various platforms and architectures.</li>
+                <li><a href="https://mormot.net/">mORMot</a> - An open-source framework for Delphi and Free Pascal, offering ORM, SOA, and RESTful services.</li>
+                <li><a href="https://castle-engine.io/">Castle Game Engine</a> - A powerful and flexible 3D game engine for Pascal, supporting multiple platforms.</li>
+                <li><a href="https://www.indyproject.org/">Indy Project</a> - A set of open-source Internet components for Delphi and Free Pascal, providing networking capabilities.</li>
+                <li><a href="https://synopse.info/fossil/wiki/mORMot">mORMot Wiki</a> - Comprehensive documentation and resources for the mORMot framework.</li>
+                <li><a href="https://www.lazarus-ide.org/">Lazarus IDE</a> - The Lazarus Integrated Development Environment (IDE) complements Free Pascal for cross-platform development.</li>
+                <li><a href="https://www.castle-engine.io/docs/en/">Castle Game Engine Documentation</a> - Detailed guides and documentation for using the Castle Game Engine.</li>
+            </ul>
+
+            <h3>General Programming Links</h3>
+            <ul>
+                <li><a href="http://www.programmersheaven.com/">Programmers Heaven</a></li>
+                <li><a href="http://www.hornet.org/">Hornet Archive</a></li>
+                <li><a href="http://www.retroarchive.org/swag/index.html">SWAG - Pascal Programming Sources</a></li>
+            </ul>
+        </section>
+
+        <section id="socials">
+            <h2>Social Links</h2>
+            <div class="socials">
+                <a href="https://www.facebook.com/vrodic">Facebook</a> |
+                <a href="https://twitter.com/vrodic/">Twitter</a> |
+                <a href="https://www.linkedin.com/in/vedranrodic/">LinkedIn</a> |
+                <a href="https://github.com/vrodic">GitHub</a> |
+                <a href="https://www.mixcloud.com/vrodic/">Mixcloud</a> |
+                <a href="https://www.youtube.com/c/VedranRodic">YouTube</a> |
+                <a href="https://www.imdb.com/user/ur17851287/ratings">IMDb</a> |
+                <a href="https://vrodic.blogspot.hr">Old Blog</a>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p><strong>Email:</strong> <a href="mailto:vrodic@gmail.com">vrodic@gmail.com</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/vedranrodic">linkedin.com/in/vedranrodic</a></p>
+            <p><strong>Website:</strong> <a href="http://vedranrodic.com/">vedranrodic.com</a></p>
+        </section>
+
+        <p><a href="#top">&lt;&lt; Back to Top</a></p>
+    </div>
+
+    <footer>
+        <p>Last revised: Thursday, Dec 5th, 2024</p>
+        <p>Best viewed with any browser</p>
+        <p>© Vedran Rodić, 1996 - 2024</p>
+    </footer>
+
+    <!-- PWA: Register the service worker -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function(err) {
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+    </script>
+</body>
+</html>

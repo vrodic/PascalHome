@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vedran Rodić - Pascal Programmer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        header, nav, section, footer {
+            margin-bottom: 20px;
+        }
+        header {
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2em;
+            color: #666;
+        }
+        nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav ul li {
+            margin: 5px 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 15px;
+            display: block;
+        }
+        nav ul li a:hover {
+            background-color: #444;
+        }
+        section h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 5px;
+        }
+        section h3 {
+            font-size: 1.5em;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        section p {
+            margin-bottom: 10px;
+        }
+        .experience-item {
+            margin-bottom: 20px;
+        }
+        .experience-item h3 {
+            margin-bottom: 5px;
+        }
+        .experience-item h4 {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 5px;
+        }
+        .skills-list, .languages-list, .socials {
+            list-style: none;
+            padding-left: 0;
+        }
+        .skills-list li, .languages-list li {
+            margin-bottom: 5px;
+        }
+        .socials a {
+            display: inline-block;
+            margin: 5px;
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .socials a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+        @media (min-width: 768px) {
+            nav ul {
+                justify-content: center;
+            }
+            .container {
+                max-width: 800px;
+                margin: 0 auto;
+            }
+            .socials a {
+                margin: 5px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vedran Rodić</h1>
+        <p>Pascal programmer from 1995, available remotely.</p>
+        <p>Product companies strongly preferred for a B2B relationship.</p>
+        <p>Dugo Selo, Zagreb, Croatia</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#languages">Languages</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#socials">Social Links</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I love to optimize software and fix hard bugs. I can make users happier, more likely to return, and your infrastructure bills lower.</p>
+        <p>Experienced full-stack developer with over 20 years of expertise in web development, software architecture, DevOps, and system administration. Proficient in Ruby on Rails, PHP, JavaScript, Java, C++, databases like MySQL, PostgreSQL, and cloud technologies like AWS and Docker (prefer working on dedicated servers and/or simple virtualized servers though).</p>
+        <p>Proven track record of leading development teams and delivering high-quality software solutions across various industries, including fintech, hospitality, business analytics, job portals, social networks, IPTV, and insurance.</p>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience-item">
+            <h3>Senior Computer Programmer and Systems Engineer</h3>
+            <h4>Rodić Production | January 2022 - Present</h4>
+            <p>Helped many clients in implementation and maintenance of their products. Custom programming, production engineering, and maintenance of existing systems. Helping put Pascal back on the map of programming languages.</p>
+        </div>
+        <div class="experience-item">
+            <h3>Full Stack Software Developer</h3>
+            <h4>Creditreform | February 2002 - Present</h4>
+            <p>Computer stuff (Web backend/frontend, PostgreSQL, integration, IT ops).</p>
+        </div>
+        <div class="experience-item">
+            <h3>Developer</h3>
+            <h4>GNU/Linux | 1999 - Present</h4>
+            <p>Contributing bug fixes, bug triage, and QA for various FLOSS projects (Wine, Xorg, Linux Kernel, Xine etc).</p>
+        </div>
+        <div class="experience-item">
+            <h3>Senior Software Engineer</h3>
+            <h4>Effectiva Studio | October 2023 - September 2024</h4>
+            <p>Ruby on Rails and JavaScript development.</p>
+        </div>
+        <div class="experience-item">
+            <h3>Senior Software Engineer</h3>
+            <h4>ELEKS | August 2022 - July 2023</h4>
+            <p>Ruby on Rails software development: implementing product features in microservices architecture.</p>
+        </div>
+        <div class="experience-item">
+            <h3>Senior Software Engineer</h3>
+            <h4>ButterflyMX® | July 2020 - February 2022</h4>
+            <ul>
+                <li>Developed full-stack Access Control core.</li>
+                <li>Made architectural DB improvements that dramatically sped up backend response time.</li>
+                <li>Developed full stack of the Key Locker and Self Guided Tours products.</li>
+                <li>Contributed to company culture and improved processes.</li>
+            </ul>
+        </div>
+        <div class="experience-item">
+            <h3>Ruby on Rails Software Developer</h3>
+            <h4>Bizzon | June 2019 - January 2020</h4>
+            <ul>
+                <li>Ported main server app from Rails 4.2 to Rails 5.2 and Rails 6.</li>
+                <li>Feature development and BI reporting solution.</li>
+                <li>Architecture and planning for scaling up and world-wide presence (app/db sharding etc).</li>
+                <li>Dev process improvements and performance optimizations.</li>
+            </ul>
+        </div>
+        <div class="experience-item">
+            <h3>Lead Developer</h3>
+            <h4>HomeExchange.com | June 2017 - May 2019</h4>
+            <p>Development of www.homeexchange.com, helping others in the development team, IT Ops/DevOps. Sped up back-end 2x, produced better reliability and cost savings.</p>
+            <p><strong>Technologies Used:</strong></p>
+            <ul>
+                <li>Payment systems: Braintree, Stripe</li>
+                <li>Search: SphinxSearch</li>
+                <li>DB: MySQL</li>
+                <li>Frontend: AngularJS</li>
+                <li>Backend: PHP - Symfony, Yii1/Yii2</li>
+                <li>AWS services</li>
+            </ul>
+        </div>
+        <!-- Add other experience items similarly -->
+    </section>
+
+    <section id="skills">
+        <h2>Top Skills</h2>
+        <ul class="skills-list">
+            <li>Performance Improvement</li>
+            <li>System Administration</li>
+            <li>Open-Source Software</li>
+        </ul>
+    </section>
+
+    <section id="languages">
+        <h2>Languages</h2>
+        <ul class="languages-list">
+            <li>English (Full Professional)</li>
+            <li>Croatian (Native or Bilingual)</li>
+        </ul>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="experience-item">
+            <h3>Tehnička škola Ruđera Boškovića</h3>
+            <h4>Electrical and Electronics Engineering | 1996 - 2000</h4>
+        </div>
+    </section>
+
+    <section id="socials">
+        <h2>Social Links</h2>
+        <div class="socials">
+            <a href="https://www.facebook.com/vrodic">Facebook</a>
+            <a href="https://twitter.com/vrodic/">Twitter</a>
+            <a href="https://www.goodreads.com/user/show/44625296-vedran-rodic">Goodreads</a>
+            <a href="https://www.linkedin.com/in/vedranrodic/">LinkedIn</a>
+            <a href="https://www.instagram.com/vedran.rodic/">Instagram</a>
+            <a href="https://github.com/vrodic">GitHub</a>
+            <a href="https://www.mixcloud.com/vrodic/">Mixcloud</a>
+            <a href="https://www.youtube.com/c/VedranRodic">YouTube</a>
+            <a href="https://www.imdb.com/user/ur17851287/ratings">IMDb</a>
+            <a href="https://vrodic.blogspot.hr">Old Blog</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p><strong>Address:</strong> Obrtnička 3, Velika Ostrna, 10370 Dugo Selo, Croatia</p>
+        <p><strong>Phone:</strong> +385 95 534 2578 (Mobile)</p>
+        <p><strong>Email:</strong> <a href="mailto:vrodic@gmail.com">vrodic@gmail.com</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/vedranrodic">linkedin.com/in/vedranrodic</a></p>
+        <p><strong>Website:</strong> <a href="http://vedranrodic.com/">vedranrodic.com</a></p>
+    </section>
+
+    <footer>
+        <p>© Vedran Rodić, 2024.</p>
+    </footer>
+</body>
+</html>
