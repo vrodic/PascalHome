@@ -2,7 +2,7 @@ In current iteration I'm serving HTTPS with Apache2
 
 Here's the configuration to put in Debian 12 /etc/apache2/sites-enabled/vedranrodic.com.conf file
 
-'''
+```
 <VirtualHost *:80>
     ServerName vedranrodic.com
     ServerAlias www.vedranrodic.com
@@ -41,4 +41,4 @@ Here's the configuration to put in Debian 12 /etc/apache2/sites-enabled/vedranro
     ErrorLog ${APACHE_LOG_DIR}/vedranrodic.com_error.log
     CustomLog ${APACHE_LOG_DIR}/vedranrodic.com_access.log combined
 </VirtualHost>
-'''
+```
