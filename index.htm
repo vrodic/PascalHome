@@ -205,8 +205,14 @@
         document.addEventListener("DOMContentLoaded", function() {
             const menuIcon = document.querySelector(".menu-icon");
             const menubar = document.querySelector(".menubar");
+            const nav = menubar.querySelector("nav");
             menuIcon.addEventListener("click", function() {
                 menubar.classList.toggle("nav-open");
+            });
+            nav.addEventListener("click", function() {
+                if (window.innerWidth <= 600) {
+                    menubar.classList.remove("nav-open");
+                }
             });
         });
     </script>
