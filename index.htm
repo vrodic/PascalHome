@@ -43,30 +43,99 @@
         header p {
             font-size: 1.2em;
         }
-        nav {
-            text-align: center;
+        .menubar {
             background-color: #c0c0c0;
             padding: 10px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            border-bottom: 2px solid #000080;
         }
-        nav a {
-            margin: 0 15px;
+        .menubar .menu-icon {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        .menubar .menu-icon img {
+            width: 30px;
+            height: 30px;
+        }
+        .menubar nav {
+            display: flex;
+            gap: 15px;
+        }
+        .menubar a {
             color: #000080;
             font-weight: bold;
-        }
-        nav a.delphi-button {
-            display: inline-block;
-            padding: 5px 15px;
-            border: 2px outset buttonface;
-            background-color: #d4d0c8;
-            color: #000000;
-            font-weight: normal;
-            font-size: 1em;
             text-decoration: none;
+            padding: 5px 15px;
+            background-color: #d4d0c8;
             font-family: Tahoma, Geneva, sans-serif;
-            margin: 5px 10px;
+            border: 2px solid transparent;
         }
-        nav a.delphi-button:hover {
-            border: 2px inset buttonhighlight;
+        .menubar a:hover {
+            border: 2px solid buttonhighlight;
+        }
+        @media (max-width: 600px) {
+            .menubar nav {
+                display: none;
+                flex-direction: column;
+                background-color: #c0c0c0;
+                position: absolute;
+                top: 50px;
+                left: 0;
+                right: 0;
+                padding: 10px;
+                border-top: 2px solid #000080;
+                border-bottom: 2px solid #000080;
+            }
+            .menubar nav a {
+                padding: 10px;
+            }
+            .menubar .menu-icon {
+                display: block;
+            }
+            .menubar.nav-open nav {
+                display: flex;
+            }
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown:hover .dropbtn {
+            border: none;
+        }
+        .dropbtn {
+            border: none;
+            background: none;
+            padding: 0;
         }
         h2 {
             border-bottom: 2px solid #000080;
@@ -79,7 +148,7 @@
         }
         .content {
             max-width: 900px;
-            margin: 0 auto;
+            margin: 80px auto 0 auto;
             background-color: #ffffff;
             padding: 20px;
             border: 1px solid #000080;
@@ -124,10 +193,6 @@
             header h1 {
                 font-size: 2em;
             }
-            nav a {
-                display: block;
-                margin: 5px 0;
-            }
             .content {
                 padding: 10px;
             }
@@ -136,23 +201,36 @@
             }
         }
     </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuIcon = document.querySelector(".menu-icon");
+            const menubar = document.querySelector(".menubar");
+            menuIcon.addEventListener("click", function() {
+                menubar.classList.toggle("nav-open");
+            });
+        });
+    </script>
 </head>
 <body>
+    <div class="menubar">
+        <button class="menu-icon"><img src="icons/lion-logo.png" alt="Lion Logo"></button>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#company">My Company</a>
+            <a href="#delphi">Delphi & Lazarus</a>
+            <a href="#links">Links</a>
+            <a href="#socials">Socials</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+
     <header>
         <h1>Vedran Rodić</h1>
         <p>Pascal Programmer from 1995</p>
         <p class="note">"I should have never trusted Kernighan or Torvalds on Pascal."</p>
     </header>
-
-    <nav>
-        <a href="#about" class="delphi-button">About Me</a>
-        <a href="#experience" class="delphi-button">Experience</a>
-        <a href="#projects" class="delphi-button">Projects</a>
-        <a href="#delphi" class="delphi-button">Delphi & Lazarus</a>
-        <a href="#links" class="delphi-button">Links</a>
-        <a href="#socials" class="delphi-button">Socials</a>
-        <a href="#contact" class="delphi-button">Contact</a>
-    </nav>
 
     <div class="content">
         <section id="about">
@@ -255,6 +333,18 @@
                 </tr>
             </table>
             <p>For more projects, please visit my <a href="https://github.com/vrodic">GitHub</a>.</p>
+        </section>
+
+        <section id="company">
+            <h2>My Company</h2>
+            <p><strong>Rodić produkcija društvo s ograničenom odgovornošću za usluge</strong></p>
+            <p><strong>Osnivanje:</strong> 2022</p>
+            <p><strong>Matični broj:</strong> 5550912</p>
+            <p><strong>MBS:</strong> 081419538</p>
+            <p><strong>OIB:</strong> 74056737081</p>
+            <p><strong>Djelatnost:</strong> Računalno programiranje</p>
+            <p><strong>Adresa:</strong> Obrtnička Ulica 3, HR 10370 Velika Ostrna</p>
+            <p><strong>E-mail:</strong> <a href="mailto:produkcija@rodic.pro">produkcija@rodic.pro</a></p>
         </section>
 
         <section id="delphi">
